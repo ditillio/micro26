@@ -325,16 +325,16 @@ layout:
                    (tratteggiata rossa)
                    che unisce i punti $A$ e $B$ è
                    $$ \\\\dfrac{\\\\Delta Y}{\\\\Delta X} = 
-                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(1)}} =
+                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(2)}} =
                     ${calcs.ratio.toFixed(3)} $$  `"
             show: params.dx1 > 0
           - html: "` A partire dal paniere $A$, il consumatore è disposto a rinunciare a
-                    ${-(params.dx1.toFixed(1))} unità di $X$
+                    ${-(params.dx1.toFixed(2))} unità di $X$
                    per avere ${calcs.dx2.toFixed(2)} unità di $Y$ in più. La pendenza della retta 
                    (tratteggiata rossa)
                    che unisce i punti $A$ e $B$ è
                    $$ \\\\dfrac{\\\\Delta Y}{\\\\Delta X} = 
-                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(1)}} =
+                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(2)}} =
                     ${calcs.ratio.toFixed(3)} $$  `"
             show: params.dx1 < 0
           - html: "` Il saggio marginale di sostituzione del bene $X$ col bene $Y$ in corrispondenza

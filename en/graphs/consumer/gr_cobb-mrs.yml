@@ -321,20 +321,20 @@ layout:
           - html: "`  `"
           - html: "` Starting from bundle $A$, the consumer is willing to give up
                     ${-(calcs.dx2.toFixed(2))} units of $Y$
-                   to have ${params.dx1.toFixed(1)} more units of $X$. The slope of the red 
+                   to have ${params.dx1.toFixed(2)} more units of $X$. The slope of the red 
                    dashed line connecting
                    points $A$ and $B$ is
                    $$ \\\\dfrac{\\\\Delta Y}{\\\\Delta X} = 
-                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(1)}} =
+                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(2)}} =
                     ${calcs.ratio.toFixed(3)} $$  `"
             show: params.dx1 > 0
           - html: "` Starting from bundle $A$, the consumer is willing to give up
-                    ${-(params.dx1.toFixed(1))} units of $X$
+                    ${-(params.dx1.toFixed(2))} units of $X$
                    to have ${calcs.dx2.toFixed(2)} more units of $Y$. The slope of the red 
                    dashed line connecting
                    points $A$ and $B$ is
                    $$ \\\\dfrac{\\\\Delta Y}{\\\\Delta X} = 
-                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(1)}} =
+                   \\\\dfrac{${calcs.dx2.toFixed(2)}}{${params.dx1.toFixed(2)}} =
                     ${calcs.ratio.toFixed(3)} $$  `"
             show: params.dx1 < 0
           - html: "` The marginal rate of substitution of $X$ with $Y$ at bundle
