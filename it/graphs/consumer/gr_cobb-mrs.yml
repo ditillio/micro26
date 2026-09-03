@@ -276,7 +276,7 @@ layout:
                     rimanga invariata.
         divs:
           - html: "`  `"
-          - html: "` La variazione $\\\\Delta X=${params.dx1.toFixed(1)}$ (dal paniere $A$ al
+          - html: "` La variazione $\\\\Delta X=${params.dx1.toFixed(2)}$ (dal paniere $A$ al
                     paniere $C$) aumenta l'utilità. La variazione $\\\\Delta Y=${calcs.dx2.toFixed(2)}$
                     (dal paniere $C$ al paniere $B$) riduce l'utilità. `"
             show: params.dx1 > 0
@@ -290,7 +290,7 @@ layout:
             show: params.dx1 > 0
           - html: "` Si può notare che quando $\\\\Delta X$ tende a zero, anche $\\\\Delta Y$ tende a zero.  `"
             show: params.dx1 > 0
-          - html: "` La variazione $\\\\Delta X=${params.dx1.toFixed(1)}$ (dal paniere $A$ al
+          - html: "` La variazione $\\\\Delta X=${params.dx1.toFixed(2)}$ (dal paniere $A$ al
                     paniere $C$) riduce l'utilità. La variazione $\\\\Delta Y=${calcs.dx2.toFixed(2)}$
                     (dal paniere $C$ al paniere $B$) aumenta l'utilità.  `"
             show: params.dx1 < 0

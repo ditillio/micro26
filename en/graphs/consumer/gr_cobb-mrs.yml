@@ -276,7 +276,7 @@ layout:
                     constant.
         divs:
           - html: "`  `"
-          - html: "` The variation $\\\\Delta X=${params.dx1.toFixed(1)}$ (from bundle $A$ to
+          - html: "` The variation $\\\\Delta X=${params.dx1.toFixed(2)}$ (from bundle $A$ to
                     bundle $C$) increases utility. The variation $\\\\Delta Y=${calcs.dx2.toFixed(2)}$
                     (from bundle $C$ to bundle $B$) decreases utility. `"
             show: params.dx1 > 0
@@ -290,7 +290,7 @@ layout:
             show: params.dx1 > 0
           - html: "` Note that when $\\\\Delta X$ tends to zero, $\\\\Delta Y$ also tends to zero.  `"
             show: params.dx1 > 0
-          - html: "` The variation $\\\\Delta X=${params.dx1.toFixed(1)}$ (from bundle $A$ to
+          - html: "` The variation $\\\\Delta X=${params.dx1.toFixed(2)}$ (from bundle $A$ to
                     bundle $C$) decreases utility. the variation $\\\\Delta Y=${calcs.dx2.toFixed(2)}$
                     (from bundle $C$ to bundle $B$) increases utility.  `"
             show: params.dx1 < 0
