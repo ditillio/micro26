@@ -93,7 +93,7 @@ layout:
           coordinates: [calcs.x1new, calcs.x2new]
           droplines:
             horizontal: calcs.x2new.toFixed(2)
-            vertical: calcs.x1new.toFixed(1)
+            vertical: calcs.x1new.toFixed(2)
           color: Blue
           r: 3
           strokeWidth: 0.5
