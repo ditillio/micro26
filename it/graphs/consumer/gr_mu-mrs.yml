@@ -181,7 +181,55 @@ layout:
                     $$
                     MRS_{XY} = \\\\dfrac{Y}{X}
                     $$  `"
-            show: params.s == 0
+            show: params.s == 0 && params.a == 1 && params.b == 1
+
+          - html: "` Le utilità marginali sono
+                    $$
+                    MU_X = ${params.a} \\\\times X^{${params.a}-1}
+                                      \\\\times Y 
+                    $$
+                    $$
+                    MU_Y = X^{${params.a}}
+                    $$
+                    e quindi il saggio marginale di sostituzione di $X$ con $Y$ è
+                    $$
+                    MRS_{XY} = \\\\dfrac{MU_X}{MU_Y} =
+                               ${params.a} \\\\times
+                               \\\\dfrac{Y}{X}
+                    $$  `"
+            show: params.s == 0 && params.a > 1 && params.b == 1
+
+          - html: "` Le utilità marginali sono
+                    $$
+                    MU_X = Y^{${params.b}}
+                    $$
+                    $$
+                    MU_Y = X \\\\times ${params.b} \\\\times Y^{${params.b}-1}
+                    $$
+                    e quindi il saggio marginale di sostituzione di $X$ con $Y$ è
+                    $$
+                    MRS_{XY} = \\\\dfrac{MU_X}{MU_Y} =
+                               \\\\dfrac{1}{${params.b}} \\\\times
+                               \\\\dfrac{Y}{X}
+                    $$  `"
+            show: params.s == 0 && params.a == 1 && params.b > 1
+
+          - html: "` Le utilità marginali sono
+                    $$
+                    MU_X = ${params.a} \\\\times X^{${params.a}-1}
+                                      \\\\times Y^{${params.b}} 
+                    $$
+                    $$
+                    MU_Y = ${params.b} \\\\times X^{${params.a}}
+                                      \\\\times Y^{${params.b}-1} 
+                    $$
+                    e quindi il saggio marginale di sostituzione di $X$ con $Y$ è
+                    $$
+                    MRS_{XY} = \\\\dfrac{MU_X}{MU_Y} =
+                               \\\\dfrac{${params.a}}{${params.b}} \\\\times
+                               \\\\dfrac{Y}{X}
+                    $$  `"
+            show: params.s == 0 && params.a > 1 && params.b > 1
 
         sliders:
         - param: a
