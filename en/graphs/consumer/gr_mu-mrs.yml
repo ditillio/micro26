@@ -176,11 +176,59 @@ layout:
                           \\\\qquad 
                     MU_Y = X 
                     $$
-                    Thus, the marginal rate of substitution of $X$ with $Y$ is 
+                    The marginal rate of substitution of $X$ with $Y$ therefore is
                     $$
                     MRS_{XY} = \\\\dfrac{Y}{X}
                     $$  `"
-            show: params.s == 0
+            show: params.s == 0 && params.a == 1 && params.b == 1
+
+          - html: "` The marginal utilities are
+                    $$
+                    MU_X = ${params.a} \\\\times X^{${params.a}-1}
+                                      \\\\times Y 
+                    $$
+                    $$
+                    MU_Y = X^{${params.a}}
+                    $$
+                    The marginal rate of substitution of $X$ with $Y$ therefore is
+                    $$
+                    MRS_{XY} = \\\\dfrac{MU_X}{MU_Y} =
+                               ${params.a} \\\\times
+                               \\\\dfrac{Y}{X}
+                    $$  `"
+            show: params.s == 0 && params.a > 1 && params.b == 1
+
+          - html: "` The marginal utilities are
+                    $$
+                    MU_X = Y^{${params.b}}
+                    $$
+                    $$
+                    MU_Y = X \\\\times ${params.b} \\\\times Y^{${params.b}-1}
+                    $$
+                    The marginal rate of substitution of $X$ with $Y$ therefore is
+                    $$
+                    MRS_{XY} = \\\\dfrac{MU_X}{MU_Y} =
+                               \\\\dfrac{1}{${params.b}} \\\\times
+                               \\\\dfrac{Y}{X}
+                    $$  `"
+            show: params.s == 0 && params.a == 1 && params.b > 1
+
+          - html: "` The marginal utilities are
+                    $$
+                    MU_X = ${params.a} \\\\times X^{${params.a}-1}
+                                      \\\\times Y^{${params.b}} 
+                    $$
+                    $$
+                    MU_Y = ${params.b} \\\\times X^{${params.a}}
+                                      \\\\times Y^{${params.b}-1} 
+                    $$
+                    The marginal rate of substitution of $X$ with $Y$ therefore is
+                    $$
+                    MRS_{XY} = \\\\dfrac{MU_X}{MU_Y} =
+                               \\\\dfrac{${params.a}}{${params.b}} \\\\times
+                               \\\\dfrac{Y}{X}
+                    $$  `"
+            show: params.s == 0 && params.a > 1 && params.b > 1
 
         sliders:
         - param: a
